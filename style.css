@@ -97,6 +97,13 @@ h2, h3 {
     width: 94vw;
 }
 
+#take-on-me-youtube-link {
+    padding: 1em 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
 a {
     text-decoration: none;
 }
