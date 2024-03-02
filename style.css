@@ -59,7 +59,7 @@ h2, h3 {
     font-weight: bold;
     margin: 1em;
     padding: 1em 5.5em 1em;
-    border: 0.25em solid rgb(255, 71, 71);
+    border: 0.125em solid rgb(255, 71, 71);
     border-radius: 0.5em;
 }
 
@@ -95,6 +95,7 @@ h2, h3 {
 
 #hero-band-photo {
     width: 94vw;
+    border-radius: 12.5%;
 }
 
 #take-on-me-youtube-link {
@@ -119,6 +120,7 @@ p {
 
 #main-section-media {
     width: 95vw;
+    border-radius: 12.5%;
 }
 
 #band-member-img {
@@ -131,6 +133,7 @@ p {
 
 #world-tour-ol li {
     margin-bottom: 1em;
+    font-weight: bold;
 }
 
 footer {
