@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
+    <title>Gallery</title>
+    <link rel="icon" type="icon" href="assets/images-videos/a-ha-icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1><b>a-ha</b><br>Fandom</h1>
+        <nav class="navbar" alt="Navigation Menu, options: Menu ; About ; Gallery ; Feedback Form">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback-form.html">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Feedback Form</h2>
+
+        <p>I invite you to share your thoughts and experiences on my a-ha band fandom site!Your feedback is invaluable
+            in helping me create a vibrant and engaging community for all a-ha fans. Whether it's a memorable concert
+            experience, a favorite song, or an interesting piece of trivia about the band, I'd love to hear from you.
+            Please remember, your contribution is entirely optional and can be made anonymously if you prefer.
+
+            <br><br>
+
+            If you're interested in contributing more actively, feel free to email me and ask for access.
+
+            <br><br>
+
+            Every voice matters and helps to enrich our fandom. Thank you for considering sharing your A-ha moments with
+            us!
+        </p>
+
+        <br><br>
+
+        <!-- Clarity for myself (def method=get) -->
+        <!-- TO-DO: Clarify missing multi file (for bigger files) -->
+        <form id="feedback-form" action="thank-you-for-feedback.html" method="get">
+
+            <label class="feedback-form-label-styling" for="name">Name (optional):</label> <br>
+            <input id="name" type="text" placeholder="Your Name"> <br><br>
+
+            <label class="feedback-form-label-styling" for="email">E-Mail (optional):</label> <br>
+            <input id="email" type="email" placeholder="Your E-Mail"> <br><br>
+
+            <label class="feedback-form-label-styling" for="feedback-options">Feedback Category:</label><br>
+            <select name="feedback-options" id="feedback-options">
+                <option class="feedback-form-option-styling" value="site-functionality">Site Functionality</option>
+                <option class="feedback-form-option-styling" value="event-inaccurracy">Event Inaccuracy</option>
+                <option class="feedback-form-option-styling" value="suggestions">Suggestion</option>
+            </select>
+
+            <br><br>
+
+            <label class="feedback-form-label-styling" for="comment">Your Feedback Below:</label> <br>
+            <textarea id="comment" cols="30" rows="5" required></textarea>
+
+            <br><br>
+
+            <label class="feedback-form-label-styling" for="file">Upload Image/Screenshot: <br> (.png / .jpeg / .jpg &
+                .bmp)</label> <br>
+
+            <br>
+
+            <input type="file" id="file" accept="image/png, image/jpeg, image/jpg, image/bmp">
+
+            <br><br>
+
+            <input type="reset" value="Reset"> <br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h2>Contact</h2>
+        <p id="contact-section-text">
+            Send us an E-Mail:
+            <a href="mailto:AhaFanFeedback@fandome.com">AhaFanFeedback@fandome.com</a><br>
+            or fill out this <a href="/feedback-form.html">Feedback Form</a>.
+            <br>
+
+            Author:<br><span id="footer-section-styling-author">Ramzan Derbishev <br> Shikarinzikato</span>
+        </p>
+    </footer>
 </body>
+
 </html>

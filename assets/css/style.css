@@ -1,6 +1,6 @@
-/* Default styling is set for mobile devices, based off of "Galaxy Fold" */
+/* Default Styling is set for Mobile Devices, based off of "Galaxy Fold", because it is the single most used device */
 
-/* START: .html styles */
+/* START: of general styles */
 
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -29,7 +29,11 @@ h2, h3 {
     text-align: center;
 }
 
-/* START: navbar & dropdown styles */
+/* END: of general styles */
+
+/* START: index.html Styles */
+
+/* START: Navbar & Dropdown Styles */
 
 .navbar ul {
     font-size: 0.75em;
@@ -70,7 +74,7 @@ h2, h3 {
 
 .dropdown a {
     display: block;
-    color: tomato;
+    color: black;
     font-size: 0.75em;
     font-weight: bold;
     text-decoration: none;
@@ -80,7 +84,7 @@ h2, h3 {
 .dropdown .content {
     display: none;
     position: absolute;
-    background-color: hsl(56, 80%, 76%);
+    background-color: hsla(56, 80%, 76%, 0.842);
     box-shadow: 2px 2px 5px tomato;
     margin: 0em 0.9em 0.5em;
 }
@@ -91,13 +95,14 @@ h2, h3 {
 
 .dropdown:hover button {
     background-color:hsla(0, 0%, 25%, 0.486);
+    color: black;
 }
 
 .dropdown a:hover {
     background-color:hsl(0, 0%, 25%);
 }
 
-/* END: navbar & dropdown styles */
+/* END: Navbar & Dropdown Styles */
 
 #hero-band-photo {
     width: 94vw;
@@ -149,32 +154,7 @@ p {
     font-weight: bold;
 }
 
-.gallery-media {
-    width: 95vw;
-    border-radius: 7.5%;
-}
-
-/* START: feedback-form styles */
-
-.feedback-form-label-styling {
-    color: tomato;
-    font-weight: bold;
-}
-
-.feedback-form-option-styling {
-    color: tomato;
-    font-weight: bold;
-    background-color: bisque;
-}
-
-#thank-you-for-feedback-text {
-    line-height: 1.5em;
-    
-}
-
-/* END: feedback-form styles */
-
-/* START: footer styles*/
+/* START: Footer Styling */
 
 footer {
     margin: 0em 1em;
@@ -191,16 +171,34 @@ footer {
     font-weight: bold;
 }
 
-/* END: footer styles */
+/* END: Footer Styling */
 
-/* END: .html styling section */
+/* End of index.html styling section */
 
-/* START: Media Querys TABLET AND DESKTOP*/
+/* Start of about.html, gallery.html, feedback-form.html styling section */
 
-/* Tablets, i.e., devices with a width of 600-900px */
 
 
 /* TO-DO: adjust viewwidth in media query for larger screens, some images are too stretched */
-@media screen and (min-width: 600px) and (max-width: 900px) {
 
+.gallery-media {
+    width: 95vw;
+    border-radius: 7.5%;
 }
+
+.feedback-form-label-styling {
+    color: tomato;
+    font-weight: bold;
+}
+
+.feedback-form-option-styling {
+    color: tomato;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+#feedback-options {
+    background-color: aliceblue;
+}
+
+/* START: Media Querys */
