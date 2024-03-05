@@ -1,6 +1,4 @@
-/* Default Styling is set for Mobile Devices, based off of "Galaxy Fold", because it is the single most used device */
-
-/* START: of general styles */
+/* Default styling is set for mobile devices, based off of "Galaxy Fold" */
 
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -29,11 +27,7 @@ h2, h3 {
     text-align: center;
 }
 
-/* END: of general styles */
-
-/* START: index.html Styles */
-
-/* START: Navbar & Dropdown Styles */
+/* navbar & dropdown styles */
 
 .navbar ul {
     font-size: 0.75em;
@@ -101,8 +95,6 @@ h2, h3 {
 .dropdown a:hover {
     background-color:hsl(0, 0%, 25%);
 }
-
-/* navbar & dropdown styling */
 
 #hero-band-photo {
     width: 94vw;
@@ -179,6 +171,8 @@ footer {
     border-radius: 7.5%;
 }
 
+/* feedback-system-related styles */
+
 .feedback-form-label-styling {
     color: tomato;
     font-weight: bold;
@@ -194,4 +188,41 @@ footer {
     background-color: aliceblue;
 }
 
-/* Media Querys */
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    .navbar ul {
+        font-size: 1.5em;
+    }
+    
+    .navbar a {
+        padding: 1em 2em;
+    }
+
+    #text-align-center {
+        text-align: center;
+    }
+
+    #take-on-me-youtube-link {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    #main-section-media {
+        display: block;
+        margin: 0 auto;
+        width: 50vw;
+        border-radius: 5%;
+    }
+    
+    #singer-description {
+        text-align: center;
+    }
+
+    #band-member-img {
+        display: block;
+        margin: 0 auto;
+        width: 50vw;
+        border-radius: 5%;
+    }
+}
