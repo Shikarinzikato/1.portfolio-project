@@ -102,7 +102,7 @@ h2, h3 {
     background-color:hsl(0, 0%, 25%);
 }
 
-/* END: Navbar & Dropdown Styles */
+/* navbar & dropdown styling */
 
 #hero-band-photo {
     width: 94vw;
@@ -154,7 +154,7 @@ p {
     font-weight: bold;
 }
 
-/* START: Footer Styling */
+/* footer styling */
 
 footer {
     margin: 0em 1em;
@@ -170,13 +170,6 @@ footer {
     color: tomato;
     font-weight: bold;
 }
-
-/* END: Footer Styling */
-
-/* End of index.html styling section */
-
-/* Start of about.html, gallery.html, feedback-form.html styling section */
-
 
 
 /* TO-DO: adjust viewwidth in media query for larger screens, some images are too stretched */
@@ -201,4 +194,4 @@ footer {
     background-color: aliceblue;
 }
 
-/* START: Media Querys */
+/* Media Querys */

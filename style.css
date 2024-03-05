@@ -1,6 +1,6 @@
 /* Default styling is set for mobile devices, based off of "Galaxy Fold" */
 
-/* START: .html styles */
+/* .html styling */
 
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -29,7 +29,7 @@ h2, h3 {
     text-align: center;
 }
 
-/* START: navbar & dropdown styles */
+/* navbar & dropdown styling */
 
 .navbar ul {
     font-size: 0.75em;
@@ -50,11 +50,17 @@ h2, h3 {
 }
 
 .navbar a:hover {
-    background-color: hsl(0%, 0%, 10%);
+    background-color: rgb(26, 26, 26);
 }
 
 .navbar li {
     float: left;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .navbar li {
+        font-size: 2em;
+    }
 }
 
 .dropdown button {
@@ -96,8 +102,6 @@ h2, h3 {
 .dropdown a:hover {
     background-color:hsl(0, 0%, 25%);
 }
-
-/* END: navbar & dropdown styles */
 
 #hero-band-photo {
     width: 94vw;
@@ -154,7 +158,7 @@ p {
     border-radius: 7.5%;
 }
 
-/* START: feedback-form styles */
+/* feedback-form styling */
 
 .feedback-form-label-styling {
     color: tomato;
@@ -169,12 +173,9 @@ p {
 
 #thank-you-for-feedback-text {
     line-height: 1.5em;
-    
 }
 
-/* END: feedback-form styles */
-
-/* START: footer styles*/
+/* footer styling*/
 
 footer {
     margin: 0em 1em;
@@ -191,16 +192,4 @@ footer {
     font-weight: bold;
 }
 
-/* END: footer styles */
-
-/* END: .html styling section */
-
-/* START: Media Querys TABLET AND DESKTOP*/
-
-/* Tablets, i.e., devices with a width of 600-900px */
-
-
 /* TO-DO: adjust viewwidth in media query for larger screens, some images are too stretched */
-@media screen and (min-width: 600px) and (max-width: 900px) {
-
-}
