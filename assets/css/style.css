@@ -1,4 +1,4 @@
-/* Default styling is set for mobile devices, based off of "Galaxy Fold" */
+/* default styling is set for mobile devices, based off of "galaxy fold" */
 
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -28,6 +28,10 @@ h2, h3 {
 }
 
 /* navbar & dropdown styles */
+
+#active-nav-section {
+    border-bottom: 1em solid tomato;
+}
 
 .navbar ul {
     font-size: 0.75em;
@@ -123,6 +127,7 @@ a, a:visited {
 }
 
 p {
+    font-size: 1em;
     line-height: 1.5em;
     text-align: justify;
 }
@@ -163,10 +168,7 @@ footer {
     font-weight: bold;
 }
 
-
-/* TO-DO: adjust viewwidth in media query for larger screens, some images are too stretched */
-
-.gallery-media {
+#gallery {
     width: 95vw;
     border-radius: 7.5%;
 }
@@ -188,9 +190,9 @@ footer {
     background-color: aliceblue;
 }
 
-/* Media Queries */
-
+/* media query for tablet sized screens */
 @media screen and (min-width: 600px) {
+    /* index.html styles */
     .navbar ul {
         font-size: 1.5em;
     }
@@ -199,13 +201,51 @@ footer {
         padding: 1em 2em;
     }
 
+    .dropdown button {
+        font-size: 1.5em;
+        padding: 0.5em 3em;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown .content {
+        margin-top: 5.25em;
+    }
+
+    .dropdown a {
+        text-align: center;
+        font-size: 1.25em;
+    }
+
     #text-align-center {
         text-align: center;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    p {
+        font-size: 2em;
+        line-height: 3em;
+        text-align: justify;
     }
 
     #take-on-me-youtube-link {
         font-size: 1.2em;
         line-height: 1.5em;
+    }
+
+    #a-ha-video {
+        width: 95vw;
+        border-radius: 5%;
     }
 
     #main-section-media {
@@ -224,5 +264,38 @@ footer {
         margin: 0 auto;
         width: 50vw;
         border-radius: 5%;
+    }
+
+    p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #world-tour-ol {
+        line-height: 2em;
+    }
+    
+    #world-tour-ol li {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+    
+    /* descendant selector = "*" */
+    #feedback-form * {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    footer {
+        margin: 0em 1em;
+    }
+    
+    #contact-section-text {
+        font-size: 1.5em;
+    }
+    
+    #footer-section-styling-author {
+        font-size: 1em;
     }
 }
