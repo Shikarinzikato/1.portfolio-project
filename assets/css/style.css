@@ -52,7 +52,7 @@ h2, h3 {
 }
 
 .navbar a:hover {
-    background-color: hsl(0%, 0%, 10%);
+    background-color: rgb(26, 26, 26);
 }
 
 .navbar li {
