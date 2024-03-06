@@ -30,7 +30,7 @@ h2, h3 {
 /* navbar & dropdown styles */
 
 #active-nav-section {
-    border-bottom: 1em solid tomato;
+    border-bottom: 0.5em solid tomato;
 }
 
 .navbar ul {
@@ -105,7 +105,7 @@ h2, h3 {
     border-radius: 12.5%;
 }
 
-#band-member-name-top {
+.band-member-name-top {
     color: tomato;
     font-weight: bold;
 }
@@ -132,12 +132,12 @@ p {
     text-align: justify;
 }
 
-#main-section-media {
+.main-section-media {
     width: 95vw;
     border-radius: 12.5%;
 }
 
-#band-member-img {
+.band-member-img {
     width: 95vw;
     border-radius: 12.5%;
 }
@@ -168,7 +168,7 @@ footer {
     font-weight: bold;
 }
 
-#gallery {
+.gallery {
     width: 95vw;
     border-radius: 7.5%;
 }
@@ -248,18 +248,18 @@ footer {
         border-radius: 5%;
     }
 
-    #main-section-media {
+    .main-section-media {
         display: block;
         margin: 0 auto;
         width: 50vw;
         border-radius: 5%;
     }
     
-    #singer-description {
+    .singer-description {
         text-align: center;
     }
 
-    #band-member-img {
+    .band-member-img {
         display: block;
         margin: 0 auto;
         width: 50vw;
@@ -280,11 +280,17 @@ footer {
         margin-bottom: 1em;
         font-weight: bold;
     }
+
+    /* feedback-form and footer styles */
     
     /* descendant selector = "*" */
     #feedback-form * {
         font-size: 1.5em;
         text-align: center;
+    }
+
+    #feedback-form-option-styling {
+        font-size: 1em;
     }
 
     footer {
