@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <!-- Header, i.e., content that appears on every single page, like the navbar below -->
     <header>
         <h1><b>a-ha</b><br>Fandom</h1>
         <nav class="navbar" aria-label="Nav Menu, options are: Menu ; About ; Gallery ; Feedback Form">
@@ -33,32 +32,38 @@
     </header>
 
     <main>
-        <h2 class="h2-tablet-size-adjust-about">Why The Website?</h2>
-
-        <p class="p-tablet-size-adjust-about">As an ardent a-ha enthusiast and a budding Full-Stack Developer, I've put together this website as a tribute
-            to
-            the band that has inspired me so much. My aim was to create a hub where fans like us could delve into the
-            fascinating world of a-ha, exploring everything from the individual journeys of the band members to their
-            incredible achievements as a trio. This website is a reflection of my deep respect for a-ha and my
-            dedication to
-            my own journey in development.
-            So, go ahead, dive in and enjoy the exploration!
-        </p>
-
+        <section id="website-purpose" aria-labelledby="website-purpose-heading">
+            <h2 id="website-purpose-heading">Why The Website?</h2>
+            <article aria-labelledby="website-purpose-description-heading">
+                <h3 id="website-purpose-description-heading">Description:</h3>
+                <p class="p-tablet-size-adjust-about">
+                    As an ardent a-ha enthusiast and a budding Full-Stack Developer, I've put together this website as a
+                    tribute
+                    to the band that has inspired me so much. My aim was to create a hub where fans like us could delve
+                    into the
+                    fascinating world of a-ha, exploring everything from the individual journeys of the band members to
+                    their
+                    incredible achievements as a trio. This website is a reflection of my deep respect for a-ha and my
+                    dedication to my own journey in development.
+                    So, go ahead, dive in and enjoy the exploration!
+                </p>
+            </article>
+        </section>
     </main>
 
     <hr>
 
     <footer>
         <h2>Contact</h2>
-        <p id="contact-section-text">
+        <address id="contact-section-text">
             Send us an E-Mail:
             <a title="Opens default email app, to compose a new message."
                 href="mailto:AhaFanFeedback@fandome.com">AhaFanFeedback@fandome.com</a><br>
-            or fill out this <a title="Takes user to" href="feedback-form.html">Feedback Form</a>.
-            <br>
-
-            Author:<br><span id="footer-section-styling-author">Ramzan Derbishev <br> Shikarinzikato</span>
+            or fill out <a title="Takes user to our feedback form" href="feedback-form.html">our feedback form</a>.
+        </address>
+        <p id="footer-section-styling-author">
+            <span class="default-text">Author:</span><br>Ramzan Derbishev <br> <span class="default-text">aka</span>
+            <br> Shikarinzikato
         </p>
     </footer>
 </body>

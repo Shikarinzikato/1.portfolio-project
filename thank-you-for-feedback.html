@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <!-- Header, i.e., content that appears on every single page, like the navbar below -->
     <header>
         <h1><b>a-ha</b><br>Fandom</h1>
         <nav class="navbar" aria-label="Nav Menu, options are: Menu ; About ; Gallery ; Feedback Form">
@@ -33,30 +32,35 @@
     </header>
 
     <main>
-        <h2>Thank You!</h2>
-
-        <p id="thank-you-for-feedback-text">Thank you so much for taking the time to provide your valuable feedback. We
-            truly appreciate your insights as
-            they help us improve our services. If you have left your contact email, please rest assured that we will
-            reach
-            out to you if you reported any issues or expressed interest in collaboration. Your input is crucial to us,
-            and
-            we look forward to continuing to serve you better. Thank you once again for your support and contribution.
-        </p>
+        <section id="thank-you-section" aria-labelledby="thank-you-heading">
+            <h2 id="thank-you-heading">Thank You!</h2>
+            <article aria-labelledby="thank-you-description-heading">
+                <h3 id="thank-you-description-heading">Description:</h3>
+                <p id="thank-you-for-feedback-text">
+                    Thank you so much for taking the time to provide your valuable feedback. We truly appreciate your
+                    insights as they help us improve our services. If you have left your contact email, please rest
+                    assured that we will reach out to you if you reported any issues or expressed interest in
+                    collaboration. Your input is crucial to us, and we look forward to continuing to serve you better.
+                    Thank you once again for your support and contribution.
+                </p>
+            </article>
+        </section>
     </main>
+
 
     <hr>
 
     <footer>
         <h2>Contact</h2>
-        <p id="contact-section-text">
+        <address id="contact-section-text">
             Send us an E-Mail:
             <a title="Opens default email app, to compose a new message."
                 href="mailto:AhaFanFeedback@fandome.com">AhaFanFeedback@fandome.com</a><br>
-            or fill out this <a title="Takes user to" href="feedback-form.html">Feedback Form</a>.
-            <br>
-
-            Author:<br><span id="footer-section-styling-author">Ramzan Derbishev <br> Shikarinzikato</span>
+            or fill out <a title="Takes user to our feedback form" href="feedback-form.html">our feedback form</a>.
+        </address>
+        <p id="footer-section-styling-author">
+            <span class="default-text">Author:</span><br>Ramzan Derbishev <br> <span class="default-text">aka</span>
+            <br> Shikarinzikato
         </p>
     </footer>
 </body>

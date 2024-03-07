@@ -10,19 +10,19 @@ body {
 }
 
 main {
-    margin: 0em 0.5em;
+    margin: 0% 2%;
 }
 
 h1 {
     text-align: center;
     color: hsl(9, 100%, 64%);
-    margin: 0.1em 0.1em 0.3em;
+    margin: 1% 12.5%;
     padding: 0em;
     border: 0.1em solid hsl(9, 100%, 64%);
     border-radius: 50%;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: tomato;
     text-align: center;
 }
@@ -30,16 +30,17 @@ h2, h3 {
 /* navbar & dropdown styles */
 
 #active-nav-section {
-    border-bottom: 0.5em solid tomato;
+    border-bottom: 0.25em solid tomato;
 }
 
 .navbar ul {
     font-size: 0.75em;
     list-style-type: none;
-    background-color:hsl(0, 0%, 25%);
+    background-color: hsl(0, 0%, 25%);
     padding: 0em;
     margin: 0em;
     overflow: hidden;
+    display: flex;
 }
 
 .navbar a {
@@ -56,11 +57,19 @@ h2, h3 {
 }
 
 .navbar li {
-    float: left;
+    flex-grow: 1;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add this line */
 }
 
 .dropdown button {
-    background-color:hsl(0, 0%, 25%);
+    background-color: hsl(0, 0%, 25%);
     color: tomato;
     font-size: 0.75em;
     font-weight: bold;
@@ -82,6 +91,7 @@ h2, h3 {
 .dropdown .content {
     display: none;
     position: absolute;
+    top: 85%;
     background-color: hsla(56, 80%, 76%, 0.842);
     box-shadow: 2px 2px 5px tomato;
     margin: 0em 0.9em 0.5em;
@@ -92,17 +102,20 @@ h2, h3 {
 }
 
 .dropdown:hover button {
-    background-color:hsla(0, 0%, 25%, 0.486);
+    background-color: hsla(0, 0%, 25%, 0.486);
     color: black;
 }
 
 .dropdown a:hover {
-    background-color:hsl(0, 0%, 25%);
+    background-color: hsl(0, 0%, 25%);
 }
 
 #hero-band-photo {
-    width: 94vw;
-    border-radius: 12.5%;
+    display: block;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
 }
 
 .band-member-name-top {
@@ -110,18 +123,32 @@ h2, h3 {
     font-weight: bold;
 }
 
+#a-ha-fig-align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #take-on-me-youtube-link {
-    padding: 1em 0.5em;
+    font-size: 1em;
+    padding: 1em 0em;
     margin-bottom: 1em;
     text-align: center;
     text-decoration: none;
+}
+
+#a-ha-video {
+    width: 95vw;
+    border-radius: 5%;
 }
 
 a {
     text-decoration: none;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: tomato;
     font-weight: bold;
 }
@@ -133,13 +160,33 @@ p {
 }
 
 .main-section-media {
-    width: 95vw;
-    border-radius: 12.5%;
+    display: block;
+    max-width: 75%;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.singer-description {
+    text-align: center;
 }
 
 .band-member-img {
-    width: 95vw;
+    display: block;
+    max-width: 50%;
     border-radius: 12.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.singer-description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #world-tour-ol {
@@ -151,6 +198,12 @@ p {
     font-weight: bold;
 }
 
+.gallery {
+    min-width: 75%;
+    max-width: 95%;
+    border-radius: 7.5%;
+}
+
 /* footer styling */
 
 footer {
@@ -159,6 +212,7 @@ footer {
 
 #contact-section-text {
     font-size: 1em;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
 }
@@ -166,18 +220,24 @@ footer {
 #footer-section-styling-author {
     color: tomato;
     font-weight: bold;
+    text-align: center;
 }
 
-.gallery {
-    width: 95vw;
-    border-radius: 7.5%;
+.default-text {
+    color: black;
 }
 
 /* feedback-system-related styles */
 
+#feedback-form {
+    width: 100%;
+    margin: 0 auto; /* This will center the form */
+}
+
 .feedback-form-label-styling {
     color: tomato;
     font-weight: bold;
+    display: block; /* This will make the label take the full width of the form */
 }
 
 .feedback-form-option-styling {
@@ -188,120 +248,23 @@ footer {
 
 #feedback-options {
     background-color: aliceblue;
+    width: 100%; /* This will make the select box take the full width of the form */
 }
 
-/* media query for tablet sized screens */
-@media screen and (min-width: 600px) {
-    /* index.html styles */
-    .navbar ul {
-        font-size: 1.5em;
-    }
-    
-    .navbar a {
-        padding: 1em 2em;
-    }
+input[type="text"], input[type="email"], textarea, input[type="file"] {
+    width: 100%; /* This will make the input fields and textarea take the full width of the form */
+}
 
-    .dropdown button {
-        font-size: 1.5em;
-        padding: 0.5em 3em;
+/* media query for iPhone 14 Pro Max */
+@media screen and (min-width: 428px) {
+    h1 {
+        margin: 1% 15.52%;
     }
+}
 
-    .dropdown {
-        display: flex;
-        justify-content: center;
-    }
-
-    .dropdown .content {
-        margin-top: 5.25em;
-    }
-
-    .dropdown a {
-        text-align: center;
-        font-size: 1.25em;
-    }
-
-    #text-align-center {
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 1.75em;
-    }
-
-    p {
-        font-size: 2em;
-        line-height: 3em;
-        text-align: justify;
-    }
-
-    #take-on-me-youtube-link {
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
-
-    #a-ha-video {
-        width: 95vw;
-        border-radius: 5%;
-    }
-
-    .main-section-media {
-        display: block;
-        margin: 0 auto;
-        width: 50vw;
-        border-radius: 5%;
-    }
-    
-    .singer-description {
-        text-align: center;
-    }
-
-    .band-member-img {
-        display: block;
-        margin: 0 auto;
-        width: 50vw;
-        border-radius: 5%;
-    }
-
-    p {
-        font-size: 1.5em;
-        line-height: 1.5em;
-    }
-
-    #world-tour-ol {
-        line-height: 2em;
-    }
-    
-    #world-tour-ol li {
-        font-size: 1.5em;
-        margin-bottom: 1em;
-        font-weight: bold;
-    }
-
-    /* feedback-form and footer styles */
-    
-    /* descendant selector = "*" */
-    #feedback-form * {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    #feedback-form-option-styling {
-        font-size: 1em;
-    }
-
-    footer {
-        margin: 0em 1em;
-    }
-    
-    #contact-section-text {
-        font-size: 1.5em;
-    }
-    
-    #footer-section-styling-author {
-        font-size: 1em;
+/* media query for ipad air */
+@media screen and (min-width: 820px) and (min-height: 1180px){
+    h1 {
+        margin: 1% 29.878%;
     }
 }
