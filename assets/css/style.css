@@ -230,11 +230,12 @@ footer {
 /* feedback-system-related styles */
 
 #feedback-form {
-    width: 100%;
+    width: 75%;
     margin: 0 auto; /* This will center the form */
 }
 
 .feedback-form-label-styling {
+    text-align: center;
     color: tomato;
     font-weight: bold;
     display: block; /* This will make the label take the full width of the form */
